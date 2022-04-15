@@ -1,4 +1,7 @@
-/* Popup style */
+p {
+  margin: 0;
+}
+
 .popup-box {
     position: fixed;
     background: #00000050;
@@ -6,27 +9,68 @@
     height: 100vh;
     top: 0;
     left: 0;
-  }
-   
-  .box {
+    z-index: 1;
+}
+
+.box {
     position: relative;
-    width: 70%;
+    width: 30%;
     margin: 0 auto;
     height: auto;
-    max-height: 70vh;
+    max-height: 80vh;
     margin-top: calc(100vh - 85vh - 20px);
     background: #fff;
     border-radius: 4px;
     padding: 20px;
     border: 1px solid #999;
     overflow: auto;
-  }
-   
-  .close-icon {
+}
+
+.Dish-and-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Dish-and-img > img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.DishName {
+  font-size: 200%;
+  font-weight: 500;
+}
+
+.Description {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.Description p:first-child {
+  font-weight: 500;
+}
+
+.Ingredients-and-nutritions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Ingredients-and-nutritions > div {
+  text-align: left;
+  width: 45%;
+}
+
+.Ingredients-and-nutritions > div p:first-child {
+  font-weight: 500;
+}
+
+.close-icon {
     content: 'x';
     cursor: pointer;
     position: fixed;
-    right: calc(15% - 30px);
+    right: calc(35% - 30px);
     top: calc(100vh - 85vh - 33px);
     background: #ededed;
     width: 25px;
@@ -36,4 +80,14 @@
     text-align: center;
     border: 1px solid #999;
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    width: 80%;
   }
+
+  .close-icon {
+    right: calc(10% - 20px);
+  }
+}

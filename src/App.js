@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import LoginPage from './Components/Login-SignupPage/Login';
+import SignUpPage from './Components/Login-SignupPage/Signup';
 import HomePage from './Components/HomePage/Home';
 import RestaurantPage from './Components/RestaurantPage/Restaurant';
 import DishPage from './Components/DishPage/Dish';
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Login" element={<LoginPage />} />
+        <Route path="/SignUp" element={<SignUpPage />} />
         <Route path="/Restaurant" element={<RestaurantPage />} />
         <Route path="/Dish" element={<DishPage />} />
       </Routes>

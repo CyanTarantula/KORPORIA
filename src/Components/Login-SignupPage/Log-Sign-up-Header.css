@@ -1,0 +1,58 @@
+p {
+    margin: 0;
+}
+
+.Login-Header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#Greeting {
+    font-size: xx-large;
+    padding: 10px 0;
+}
+
+.Title-Section {
+    width: 100%;
+    background-color: #d7f2d7;
+    /* padding: 5px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon {
+    margin-right: 5vw;
+}
+
+.Icon > img {
+    height: 15vh;
+}
+
+.Title-and-tagline {
+    color: #012c78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Title {
+    font-size: xxx-large;
+    font-weight: 700;
+}
+
+#Tagline {
+    font-size: medium;
+}
+
+@media screen and (max-width: 600px) {
+    #Title {
+        font-size: xx-large;
+        font-weight: 700;
+    }
+    #Greeting {
+        font-size: x-large;
+    }
+}

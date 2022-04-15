@@ -37,7 +37,7 @@
 
 .dish > img {
     height: 20vh;
-    width: 20vw;
+    width: 18vw;
     min-height: 54px;
     min-width: 96px;
     border-radius: 10px;
@@ -50,13 +50,8 @@
     justify-content: space-between;
 }
 
-/* .Row-of-dish > .restaurant {
-    text-decoration: none;
-} */
-
 .Row-of-dish::-webkit-scrollbar {
     height: 8px;
-    /* border-radius: 10px; */
 }
 
 .Row-of-dish::-webkit-scrollbar-track {
@@ -69,7 +64,6 @@
     background: #888;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    /* height: 10vw; */
 }
 
 .Row-of-dish::-webkit-scrollbar-thumb:hover {
@@ -80,4 +74,18 @@
     display: none;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    .dish > img {
+        height: 20vh;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .dish > img {
+        height: 36vh;
+        width: 20vw;
+    }
 }

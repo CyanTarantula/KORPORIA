@@ -62,40 +62,16 @@ export default function HomePage() {
             
             <div className="Category-and-res">
                 <Category value="Popular restaurants near you" />
-                <div className="Row-of-res">
-                    {/* <Link 
-                        to="/Restaurant"
-                        state={{
-                            resImg: (Res1),
-                            resName: "Restaurant 1"
-                        }}
-                        style={{
-                            color: 'inherit', 
-                            textDecoration: 'inherit'
-                        }}> */}
-                        
-                        <RestaurantBox 
-                            resImg={Res1}
-                            resName="Restaurant 1"
-                        />
-                    {/* </Link> */}
+                <div className="Row-of-res">                        
+                    <RestaurantBox 
+                        resImg={Res1}
+                        resName="Restaurant 1"
+                    />
                     
-                    {/* <Link 
-                        to="/Restaurant"
-                        state={{
-                            resImg: (Res2),
-                            resName: "Restaurant 2"
-                        }}
-                        style={{
-                            color: 'inherit', 
-                            textDecoration: 'inherit'
-                        }}> */}
-                        
-                        <RestaurantBox 
-                            resImg={Res2}
-                            resName="Restaurant 2"
-                        />
-                    {/* </Link> */}
+                    <RestaurantBox 
+                        resImg={Res2}
+                        resName="Restaurant 2"
+                    />
 
                     <RestaurantBox 
                         resImg={Res3}

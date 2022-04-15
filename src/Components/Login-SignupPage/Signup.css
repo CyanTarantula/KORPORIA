@@ -2,7 +2,7 @@ p {
     margin: 0;
 }
 
-.Login-Form {
+.SignUp-Form {
     padding: 20px;
     min-height: 65vh;
     display: flex;
@@ -14,7 +14,7 @@ p {
     font-size: x-large;
 }
 
-.Login-Form > form {
+.SignUp-Form > form {
     min-height: 35vh;
     width: 40vw;
     border-width: 5px;
@@ -51,6 +51,22 @@ p {
     width: 100%;
 }
 
+.Radio-Field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.Radio-Btns {
+    display: flex;
+}
+
+.Radio-Btn {
+    margin: 0 5px;
+}
+
 .Submit {
     margin-left: auto;
 }
@@ -63,18 +79,18 @@ p {
     padding: 15px 20px;
 }
 
-.Sign-Up {
+.Log-In {
     display: flex;
     flex-direction: row;
 }
 
-.Sign-Up > a {
+.Log-In > a {
     color: #012c78;
     margin: 0 5px;
     font-weight: 500;
 }
 
-.Sign-Up > a:hover {
+.Log-In > a:hover {
     font-weight: 700;
     cursor: pointer;
 }

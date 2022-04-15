@@ -31,28 +31,6 @@ function Category(props) {
     )
 }
 
-// function DishPopUp(props) {
-//     // React.useEffect(() => {
-//     //     window.addEventListener('click', () => {
-
-//     //     });
-//     // }, []);
-//     return (
-//         <div id="Dish-pop-up">
-//             {/* {
-//                 var popUp = document.getElementById('Dish-pop-up');
-//                 window.onclick = function (event) {
-//                     if (event.target == popUp) {
-//                         popUp.style.display = "none"
-//                     }
-//                 }
-//             } */}
-//             <button onClick={() => {document.getElementById('Dish-pop-up').style.display = "none"}}>Close</button>
-//             <p>{props.dishName}</p>
-//         </div>
-//     )
-// }
-
 function DishBox(props) {
     const [isOpen, setIsOpen] = useState(false);
     
@@ -64,42 +42,38 @@ function DishBox(props) {
     const {resImg, resName} = location.state
 
     return (
-        <>
-            {/* <Link 
-                to="/Dish"
-                state={{
-                    resImg: resImg,
-                    resName: resName,
-                    dishImg: props.dishImg,
-                    dishName: props.dishName
-                }}
-                style={{
-                    color: 'inherit', 
-                    textDecoration: 'inherit'
-                }}> */}
-                
-                <div className="dish" onClick={togglePopup}>
-                    <img src={props.dishImg} />
-                    <p>{props.dishName}</p>
-                </div>
-                
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
-                
-                {
-                    isOpen && <Popup
-                    content={<>
-                        <b>Design your Popup</b>
-                        <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button>Test button</button>
-                    </>}
-                    handleClose={togglePopup}
-                    />
-                }
-                {/* {
-                    this.state.clicked &&
-                    <DishPopUp dishImg={props.dishImg} dishName={props.dishName} />
-                } */}
-            {/* </Link> */}
+        <>                
+            <div className="dish" onClick={togglePopup}>
+                <img src={props.dishImg} />
+                <p>{props.dishName}</p>
+            </div>
+            
+            {
+                isOpen && <Popup
+                dishName = {props.dishName}
+                dishImg = {props.dishImg}
+                description = {props.description}
+                dishIngredients = {props.dishIngredients}
+                dishNutritions = {props.dishNutritions}
+                // content={<>
+                //     <b>{props.dishName}</b>
+                //     <img style={{
+                //         content: `url(${props.dishImg})`,
+                //         width: "100%"
+                //     }} />
+                //     <div style={{
+                //         textAlign: "left"
+                //     }}>
+                //         <p>Ingredients:</p>
+                //         <p>
+                //             {props.dishIngredients}
+                //         </p>
+
+                //     </div>
+                // </>}
+                handleClose={togglePopup}
+                />
+            }
         </>
     )
 }
@@ -121,6 +95,70 @@ export default function RestaurantPage() {
                 <DishBox 
                     dishImg={Dish2}
                     dishName="Dish 2"
+                    description="Noodles are a type of food made from unleavened dough which is rolled flat and cut, stretched or extruded, into long strips or strings. Noodles can be refrigerated for short-term storage or dried and stored for future use. Noodles are usually cooked in boiling water, sometimes with cooking oil or salt added."
+                    dishIngredients="Noodles, Bell pepper, Tomato, Onion"
+                    dishNutritions="Calories: 188.
+                    Carbs: 27 grams"
+                />
+                <DishBox 
+                    dishImg={Dish3}
+                    dishName="Dish 3"
+                    description="A hamburger is a sandwich consisting of a cooked meat patty on a bun or roll. Hamburgers are traditionally made with ground beef and served with onions, tomatoes, lettuce, ketchup, and other garnishes."
+                    dishIngredients="Buns, Beef, Cheese, Lettuce, Onion, Tomato and Pickle."
+                />
+                <DishBox 
+                    dishImg={Dish4}
+                    dishName="Dish 4"
+                />
+                <DishBox 
+                    dishImg={Dish5}
+                    dishName="Dish 5"
+                />
+            </div>
+
+            {
+                // function isEventSupported(eventName) {
+                //     var el = document.createElement('div')
+                //     eventName = 'on' + eventName
+                //     var isSupported = (eventName in el)
+                //     if (!isSupported) {
+                //         el.setAttribute(eventName, 'return;')
+                //         isSupported = typeof el[eventName] == 'function'
+                //     }
+                //     el = null
+                //     return isSupported
+                // }
+
+                // (document).ready(function() {
+                //     var wheelEvent = isEventSupported('mousewheel') ? 'mousewheel' : 'wheel';
+                    
+                //     document.querySelector("#Row-of-dish").on(wheelEvent, function(e) {
+                //         var oEvent = e.originalEvent,
+                //             delta  = oEvent.deltaY || oEvent.wheelDelta;
+                        
+                //         if (delta > 0) {
+                //             // Scrolled up
+                //         } else {
+                //             // Scrolled down
+                //         }
+                //     });
+                // })
+            }
+            
+            {/* <Category value="Fast-food" />
+            <div className="Row-of-dish">
+                <DishBox 
+                    dishImg={Dish1}
+                    dishName="Dish 1"
+                />
+                <DishBox 
+                    dishImg={Dish2}
+                    dishName="Dish 2"
+                    // description="Yummy noodles........"
+                    description="Noodles are a type of food made from unleavened dough which is rolled flat and cut, stretched or extruded, into long strips or strings. Noodles can be refrigerated for short-term storage or dried and stored for future use. Noodles are usually cooked in boiling water, sometimes with cooking oil or salt added."
+                    dishIngredients="Noodles, Bell pepper, Tomato, Onion"
+                    dishNutritions="Calories: 188.
+                    Carbs: 27 grams"
                 />
                 <DishBox 
                     dishImg={Dish3}
@@ -134,7 +172,7 @@ export default function RestaurantPage() {
                     dishImg={Dish5}
                     dishName="Dish 5"
                 />
-            </div>
+            </div> */}
 
             <Footer />
         </div>
