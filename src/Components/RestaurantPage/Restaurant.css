@@ -1,0 +1,83 @@
+.Restaurant-Name {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    background-size: 100% auto;
+    height: 50vmin;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 10vmin;
+    font-weight: 500;
+}
+
+.category {
+    font-size: larger;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+    transition: padding 0.2s ease-in-out;
+    padding-top: 10px;
+}
+
+.dish:hover {
+    padding-top: 0px;
+    background-color: rgb(246, 246, 246);
+}
+
+.dish > img {
+    height: 20vh;
+    width: 20vw;
+    min-height: 54px;
+    min-width: 96px;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.Row-of-dish {
+    display: flex;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+/* .Row-of-dish > .restaurant {
+    text-decoration: none;
+} */
+
+.Row-of-dish::-webkit-scrollbar {
+    height: 8px;
+    /* border-radius: 10px; */
+}
+
+.Row-of-dish::-webkit-scrollbar-track {
+    background: white;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.Row-of-dish::-webkit-scrollbar-thumb {
+    background: #888;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /* height: 10vw; */
+}
+
+.Row-of-dish::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#Dish-pop-up {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}

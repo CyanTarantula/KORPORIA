@@ -1,0 +1,138 @@
+p {
+    margin: 0;
+}
+
+.Login-Header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#Greeting {
+    font-size: xx-large;
+    padding: 10px 0;
+}
+
+.Title-Section {
+    width: 100%;
+    background-color: #d7f2d7;
+    /* padding: 5px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon {
+    margin-right: 5vw;
+}
+
+.Icon > img {
+    height: 15vh;
+}
+
+.Title-and-tagline {
+    color: #012c78;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Title {
+    font-size: xxx-large;
+    font-weight: 700;
+}
+
+#Tagline {
+    font-size: medium;
+}
+
+.Login-Form {
+    padding: 20px;
+    min-height: 65vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Form-Title {
+    font-size: x-large;
+}
+
+.Login-Form > form {
+    min-height: 35vh;
+    width: 40vw;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Input-Fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+
+.Input-Field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.Input-Field > input {
+    margin-top: 5px;
+    height: 2rem;
+    width: 100%;
+}
+
+.Submit {
+    margin-left: auto;
+}
+
+.Submit-Btn {
+    display: table-cell;
+    background-color: #012c78;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.Sign-Up {
+    display: flex;
+    flex-direction: row;
+}
+
+.Sign-Up > a {
+    color: #012c78;
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+.Sign-Up > a:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #Title {
+        font-size: xx-large;
+        font-weight: 700;
+    }
+    #Greeting {
+        font-size: x-large;
+    }
+    .Login-Form > form {
+        width: 90vw;
+    }
+}
