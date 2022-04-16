@@ -12,13 +12,13 @@ export default function Footer(props) {
                 <div className="left-section">
                     <div className="sub-section">
                         <h4>About</h4>
-                        <a id="Meet" href="https://www.google.com">Meet the team</a>
+                        <a href="#">Meet the team</a>
                         <a href="#">Our mission statement</a>
                         <a href="#">Work opportunities</a>
                     </div>
                     <div className="sub-section">
                         <h4>Contact</h4>
-                        <a href="#">The developers</a>
+                        <a href="https://github.com/CyanTarantula/KORPORIA">The developers</a>
                         <a href="#">The owners</a>
                     </div>
                     {

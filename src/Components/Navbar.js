@@ -12,7 +12,11 @@ export default function Navbar() {
                 </div>
             </Link>
             <div className="Login">
-                <Link className="Login-Btn" to="/Login">Login</Link>
+                <div className="Login-Btn">
+                    <Link to="/Login">
+                        Login
+                    </Link>
+                </div>
             </div>
         </div>
     )

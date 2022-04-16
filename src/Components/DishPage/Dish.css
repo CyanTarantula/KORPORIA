@@ -2,7 +2,7 @@ p {
   margin: 0;
 }
 
-.popup-box {
+#popup-box {
     position: fixed;
     background: #00000050;
     width: 100%;
@@ -80,6 +80,30 @@ p {
     text-align: center;
     border: 1px solid #999;
     font-size: 20px;
+}
+
+.box::-webkit-scrollbar {
+  width: 9px;
+  /* padding: 5px; */
+}
+
+.box::-webkit-scrollbar-track {
+  background: white;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-block: 5px;
+  /* border-right: 5px solid white; */
+}
+
+.box::-webkit-scrollbar-thumb {
+  background: #888;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /* border-right: 5px solid white; */
+}
+
+.box::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media screen and (max-width: 600px) {

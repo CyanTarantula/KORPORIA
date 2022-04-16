@@ -67,7 +67,7 @@ export default function SignUpPage() {
         <div className="SignUpPage">
             <Header />
             <SignUpForm />
-            <Footer showOwnerOption={true}/>
+            <Footer />
         </div>
     )
 }

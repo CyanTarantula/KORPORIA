@@ -46,7 +46,7 @@ export default function LoginPage() {
         <div className="LoginPage">
             <Header />
             <LoginForm />
-            <Footer showOwnerOption={true}/>
+            <Footer />
         </div>
     )
 }

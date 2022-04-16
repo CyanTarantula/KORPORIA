@@ -2,8 +2,16 @@ import "./Dish.css"
 import React from "react";
 
 const Popup = props => {
+  // const modal = document.querySelector("#popup-box")
+
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     props.handleClose
+  //   }
+  // }
+
   return (
-    <div className="popup-box">
+    <div id="popup-box" onclick={props.handleClose}>
       <div className="box">
         <span className="close-icon" onClick={props.handleClose}>X</span>
         {/* {props.content} */}
