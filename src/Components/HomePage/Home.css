@@ -92,3 +92,17 @@
 .Row-of-res::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    .restaurant > img {
+        height: 20vh;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .restaurant > img {
+        height: 36vh;
+        width: 20vw;
+    }
+}
