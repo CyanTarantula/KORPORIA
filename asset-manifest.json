@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KORPORIA/static/css/main.5b948bf3.css",
-    "main.js": "/KORPORIA/static/js/main.a98f3fac.js",
+    "main.js": "/KORPORIA/static/js/main.cc15fe49.js",
     "static/js/787.18db35f8.chunk.js": "/KORPORIA/static/js/787.18db35f8.chunk.js",
     "static/media/instagram.png": "/KORPORIA/static/media/instagram.b04a414745cff566c72f.png",
     "static/media/restaurant3.jpg": "/KORPORIA/static/media/restaurant3.3c9a302180045e3598be.jpg",
@@ -20,11 +20,11 @@
     "static/media/dish3.jpeg": "/KORPORIA/static/media/dish3.1ce0e1353762d5541136.jpeg",
     "index.html": "/KORPORIA/index.html",
     "main.5b948bf3.css.map": "/KORPORIA/static/css/main.5b948bf3.css.map",
-    "main.a98f3fac.js.map": "/KORPORIA/static/js/main.a98f3fac.js.map",
+    "main.cc15fe49.js.map": "/KORPORIA/static/js/main.cc15fe49.js.map",
     "787.18db35f8.chunk.js.map": "/KORPORIA/static/js/787.18db35f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5b948bf3.css",
-    "static/js/main.a98f3fac.js"
+    "static/js/main.cc15fe49.js"
   ]
 }
