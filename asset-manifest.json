@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/KORPORIA/static/css/main.5b948bf3.css",
+    "main.js": "/KORPORIA/static/js/main.a98f3fac.js",
+    "static/js/787.18db35f8.chunk.js": "/KORPORIA/static/js/787.18db35f8.chunk.js",
+    "static/media/instagram.png": "/KORPORIA/static/media/instagram.b04a414745cff566c72f.png",
+    "static/media/restaurant3.jpg": "/KORPORIA/static/media/restaurant3.3c9a302180045e3598be.jpg",
+    "static/media/dish1.jpg": "/KORPORIA/static/media/dish1.2ee81bbce9f2a4e5e49c.jpg",
+    "static/media/home-hero-img.jpg": "/KORPORIA/static/media/home-hero-img.33b03b4b87f0a9881f7f.jpg",
+    "static/media/restaurant1.jpg": "/KORPORIA/static/media/restaurant1.ce491b494145fa0e6d8c.jpg",
+    "static/media/restaurant5.jpg": "/KORPORIA/static/media/restaurant5.aa729afdf8d5bde3fac5.jpg",
+    "static/media/restaurant2.jpeg": "/KORPORIA/static/media/restaurant2.37cd76a403653c0b4271.jpeg",
+    "static/media/twitter.png": "/KORPORIA/static/media/twitter.89d4a3b71f7ba90a3af9.png",
+    "static/media/logo.png": "/KORPORIA/static/media/logo.82ef8c3747be4e85eecf.png",
+    "static/media/facebook.png": "/KORPORIA/static/media/facebook.927f0293c22a728a97ba.png",
+    "static/media/dish4.jpeg": "/KORPORIA/static/media/dish4.81a05118df9e78c186a4.jpeg",
+    "static/media/restaurant4.jfif": "/KORPORIA/static/media/restaurant4.b281f83d7d3d84873d42.jfif",
+    "static/media/dish2.jpeg": "/KORPORIA/static/media/dish2.0516154c60b33e66f225.jpeg",
+    "static/media/dish5.jpeg": "/KORPORIA/static/media/dish5.6c4cf7dd02e211957550.jpeg",
+    "static/media/dish3.jpeg": "/KORPORIA/static/media/dish3.1ce0e1353762d5541136.jpeg",
+    "index.html": "/KORPORIA/index.html",
+    "main.5b948bf3.css.map": "/KORPORIA/static/css/main.5b948bf3.css.map",
+    "main.a98f3fac.js.map": "/KORPORIA/static/js/main.a98f3fac.js.map",
+    "787.18db35f8.chunk.js.map": "/KORPORIA/static/js/787.18db35f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b948bf3.css",
+    "static/js/main.a98f3fac.js"
+  ]
+}
